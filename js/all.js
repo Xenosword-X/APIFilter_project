@@ -56,7 +56,8 @@ const button_group=document.querySelector('.button-group');
 button_group.addEventListener("click",function(e){
     const type=e.target.getAttribute("data-type"); //紀錄點擊到的按鈕type屬性N01 N04 N05 N06
     if(type==="N01"){
-        renderTable(rawData);
+        currentData = rawData
+        renderTable(currentData);
         return;
     }
     const filterData=rawData.filter(function(item){
