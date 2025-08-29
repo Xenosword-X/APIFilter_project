@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    /* 基本編譯選項 */
+    "target": "ES2017",                  /* 轉譯成的 JS 版本 */
+    "module": "ESNext",                  /* 模組系統：瀏覽器/打包工具皆可 */
+    "lib": ["ES2017", "DOM"],            /* 讓字串 includes、DOM API 有型別 */
+    "strict": true,                      /* 開啟嚴格模式 */
+    "esModuleInterop": true,             /* 讓 import axios 之類更好用 */
+    "moduleResolution": "Node",          /* 模組解析方式 */
+
+    /* 輸出 / 輸入 */
+    "outDir": "./dist",                  /* 編譯輸出目錄 */
+    "rootDir": "./",                     /* 專案根目錄 */
+    "allowJs": false,                    /* 不要把 .js 檔一起編譯 */
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  },
+  "include": ["./**/*.ts"],              /* 專案下所有 ts 檔 */
+  "exclude": ["node_modules", "dist", "**/*.js"] /* 排除不需要的 */
+}
